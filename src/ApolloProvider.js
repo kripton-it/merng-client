@@ -4,10 +4,8 @@ import { setContext } from 'apollo-link-context';
 
 import App from './App';
 
-const PORT = process.env.PORT || 5000;
-
 const httpLink = createHttpLink({
-  uri: `http://localhost:${PORT}`
+  uri: 'https://pure-escarpment-25905.herokuapp.com/'
 });
 
 const authLink = setContext(() => {
