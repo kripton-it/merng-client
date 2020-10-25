@@ -4,7 +4,7 @@ import { setContext } from 'apollo-link-context';
 
 import App from './App';
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 const httpLink = createHttpLink({
   uri: `http://localhost:${PORT}`
