@@ -92,7 +92,7 @@ const SinglePost = ({ history, match: { params: { postId } } }) => {
                     />
                     <button
                       className='ui button teal'
-                      disabled={values.body.trim() === ''}
+                      disabled={values.body.trim() === '' || createCommentLoading}
                       type='submit'
                     >Submit</button>
                   </div>

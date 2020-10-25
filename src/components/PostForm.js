@@ -41,7 +41,7 @@ const PostForm = () => {
             placeholder='Hi World!'
             value={values[FormField.BODY]}
           />
-          <Button type='submit' color='teal'>
+          <Button type='submit' color='teal' disabled={loading}>
             Submit
           </Button>
         </Form.Field>
